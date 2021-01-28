@@ -42,22 +42,48 @@
 
     <h2>Atribuição Simples</h2>
     <!--Atribuçoes com ordem de | Resultado das atribuições
-    precedencia--> <p>          |       
-    <li> var a = 5 + 3               |           8
-    <li> var b = a % 5               |           3
-    <li> var c = 5 * b ** 2          |           45
-    <li> var d = 10 - a / 2          |           6
-    <li> var e = 6 * 2 / d           |           2
-    <li> var f = b % e + 4 / e       |           3 
+    precedencia--> 
+    <p>
+        <ul>          |       
+            <li> var a = 5 + 3               |           8
+            <li> var b = a % 5               |           3
+            <li> var c = 5 * b ** 2          |           45
+            <li> var d = 10 - a / 2          |           6
+            <li> var e = 6 * 2 / d           |           2
+            <li> var f = b % e + 4 / e       |           3 
+        </ul>
     </p>
 
     <h2>AUTO-ATRIBUIÇÕES</h2>
+    <!-- Na expressão abaixo a variavel n vale 3 e logo abaixo a expressão n = n + 4 altera o valor da variável, atribuido a ela o valor 7, que é resultado de n(3) + 4 == 7 -->
+    <p>
+        <ul>
+            <li>var n = 3
+            <li>n = n + 4
+            <!-- E assim por diante. Toda vez que for auto-atribuído algo a n, ele faz o calculo e substitui a variável n-->
+            <li> n = n - 5
+            <li> n = n * 4
+            <li> n = n / 2
+            <li> n = n ** 2
+            <li> n = n % 5
+        </ul>
+        </p>
+    <h3>Simplificando Atribuições</h3>
+    <!-- Em vez de usa a atribuição, pode-se usar a atribuição simplificada. Exemplo abaixo:-->
+        <ul>
+            <li> n += 4
+            <li> n -= 5
+            <li> n *=4
+            <li> n /= 2
+            <li> n **= 2
+            <li> n %= 5
+        </ul>
+    <h3>Atribuição por INCREMENTO</h3>
+    <p>Além das atribuições acima também há a por INCREMENTO, exeplo abaixo:</p>
+        <p> x = x + 1, pode ser assim => x++ </p>
+        <p> x = x -1 , pode ser assim => x--</p>
+    <p> Observação: o ++ e o --, podem também vir antes do x. isso quer fizer que ele vai somar ou subtrair antes de armazenar e não armazenar para depois fazer o calculo e mostrar o valor certo na tela. Na prática, em coistos básico e intermediários não faz tanta diferenças, mas na programação avançada ajuda bastante.
 
-
-
-
-
-
-
+    </p>
 </body>
 </html>
