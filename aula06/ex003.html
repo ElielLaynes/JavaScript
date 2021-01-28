@@ -23,12 +23,21 @@
 
 
     <script>
-        // Convertendo string para número
+        // Convertendo string para NÚMERO
         var n1 = Number.parseInt(window.prompt('Digite um número: '))
-        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
-        var n3 = Number.(window.prompt('Digite mais um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
         var soma = n1 + n2
         window.alert('A soma dos valores é ' + soma)
+    </script>
+
+    <script>
+        // Convertendo Números para STRING
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        // utilizando template string com PlaceHolder
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}` )
+
     </script>
 </body>
 </html>
@@ -42,6 +51,41 @@
 O que não elimina as versões com parse, quando necessário declarar é bom usar o parse.
 
 # Colocando aspenas o parseInt/Float também funciona.
+
+                >>> CONVERSÃO DE NÚMERO PARA STRING <<<
+
+    Para converter números para string pode-se usar os comandos:
+
+        String(n)
+        n.toString()
+    
+    Dessa forma vamos ter a conversão de dados para string.
+-->
+
+<!--
+                >>> FORMATANDO STRINGS <<<
+
+A algumas formas de tratas as string e nas versões atuais do JavaScript tem o template string, que facilita bastante a impressão dos dados.
+
+    Exemplos:
+
+    var s = 'JavaScript'
+    'Eu estou aprendendo s'         // não faz interpolação  -> ou seja, não imprime a variável (s) junto da string.
+    'Eu estou aprendendo' + s      // usa concatenação       -> serve para impressões de dados simples.
+    `Eu estou aprendendo ${s}`    // usa template string     -> Deixa a impressão do dados mais flexível e dinâmica. 
+        obs1: O símbolo ${} é chamodo de PlaceHolder
+        obs2: para usar template string precisa usar CRASE em vez de aspas.
+
+
+            >>> OUTRAS FORMAS DE FORMATAÇÃO DE STRINGS <<<
+
+Há também outras diversas formas de formatar uma string. Exemplos:
+
+    var s = 'JavaScript'
+
+    s.length               // retorna quantos caracteres a string tem.
+    s.toUpperCase()       // colocar todas as letras para 'MAIÚSCULAS'.
+    s.toLowerCase()      // colocar todas as letras para 'minúsculas'.
 
 
 -->

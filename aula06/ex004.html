@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Strings e Números</title>
+    <style>
+        body{
+            background-color: darkslategray;
+            font: normal 20pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tratamento de Strings e Números</h1>
+    <p>Nessa Aula vamos aprender alguns metodos para tratamento de string e números em JavaScript.</p>
+
+    <h2>Exemplos:</h2>
+    <p>Para Strings, o comando nome.length serve para contar letras, nome.toUpperCase() todas as letras Maiúsculas e nome.toLowerCase() para letras minúsculas</p>
+
+
+    <script>
+        var nome = window.prompt('Qual é o seu nome? ')
+        // O comando write escreve na tela.
+        // A tag <br/> serve para quebrar linha.
+        document.write(`Olá ${nome}. Seu nome tem ${nome.length} letras.<br/>`)
+        document.write(`Seu nome em letras Maiúsculas é: ${nome.toUpperCase()}<br/>`)
+        document.write(`Seu nome em letras minúsculas é: ${nome.toLowerCase()}`)
+    </script>
+</body>
+</html>
+
+<!--                >>> FORMATANDO NÚMEROS <<<
+
+    var n1 = 1543.5
+    n1.toFixed(2)                       // Para números fixos com 2 casas decimais.
+    n1.toFixed(2).replace('.' , ',')   // Usa o método .replace('','') para trocar uma coisa por outra. Nesse caso, Ponto por Vírgula.
+
+    n1.toLocaleString('pt-br', {style: 'currency', currency: 'BLR'}) // Esse comando é para mostar o valor monetário em Real, por exemplo.
+
+
+
+-->
+
