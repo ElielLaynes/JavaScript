@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Aula 04</title>
+    <style>
+        body{
+            background-color: rgb(18, 92, 92);
+            color: black; /* Comentário em CSS */
+            font: normal 20px Arial;
+        }
+
+        h1{
+            color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Bem vindo ao mundo do JavaScript :D</p>
+    <p>Tratamento de Dados - ex003</p>
+
+
+    <script>
+        // Convertendo string para número
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        var n3 = Number.(window.prompt('Digite mais um número: '))
+        var soma = n1 + n2
+        window.alert('A soma dos valores é ' + soma)
+    </script>
+</body>
+</html>
+
+<!-- para fazer a conversão de string para números, em JavaScript usa-se:
+
+    Number.parseInt(n) -> para números inteiros
+    Number.parseFloat(n) -> para números com ponto flutuante
+
+-> nas versões mais atuais do JavaScript essa conversão funciona utilizando apenas Number(n) e o próprio JavaScript se encarrega de fazer a conversão. 
+O que não elimina as versões com parse, quando necessário declarar é bom usar o parse.
+
+# Colocando aspenas o parseInt/Float também funciona.
+
+
+-->
