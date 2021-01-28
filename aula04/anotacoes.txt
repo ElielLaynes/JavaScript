@@ -1,0 +1,29 @@
+Observações
+
+
+Tipos primitivos
+
+No JavaScript, os número inteiros e real ou com ponto flutuante, inicialmente são tratados com por um mesmo tipo, number, também há as strings e booleanos(true e false)
+
+Data Types -> tipos de dados
+
+> number
+    valores internos do number:
+    Infinity
+    NaN (note and number)
+> strings
+> boolean
+> null
+> undefined
+> object
+    Array
+> function
+
+__Para entender melhor cada tipo primitivo no JavaScript, usa-se o comando typeof.
+    Exemplo:
+
+    var n = 200 
+    typeof n 'number'
+
+    var n = 'teste'
+    typeof n 'string'
