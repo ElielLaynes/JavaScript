@@ -17,6 +17,10 @@ section {
     box-shadow: 3px 3px 10px rgb(34, 3, 3);
 
 }
+div {
+    text-align: center;
+    
+}
 footer {
     color: floralwhite;
     text-align: center;
