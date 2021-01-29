@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pr-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Pais de Origem</title>
+</head>
+<body>
+    <h1>Diz a nacionalidade da pessoa com base no pais de origem dela</h1>
+    
+    Qual seu País? <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="nacionalidade()">
+    <div id="res">
+
+    </div>
+    <script>
+        function nacionalidade() {
+            var txtpais = document.querySelector('input#txtp')
+            var res = document.querySelector('div#res')
+            var pais = txtpais.value
+            res.innerHTML = `<p>Seu pais Atual é <strong>${pais}</strong></p>`
+            if (pais == 'Brasil', 'brasil') {
+                res.innerHTML = `Você é Brasileiro!`
+            } else {
+            res.innerHTML = `Você é Estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>
