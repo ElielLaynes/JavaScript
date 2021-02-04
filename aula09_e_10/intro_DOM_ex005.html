@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: cadetblue;
+            color: cornsilk;
+            font: normal 18pt Arial;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+
+    <div id='msg'>Clique em mim</div>
+
+    <div name='msg'>teste de seleção com name=''</div>
+
+<script>
+    var p1 = window.document.getElementsByTagName('p')[1]
+    window.document.write(p1.innerText) //.innerText para pegar o texto do parágrafo, sem formatações, é o texto puro.
+    window.document.write(p1.innerHTML) // .innerHTML retorna o texto com as formações que ele tiver
+
+    var a = window.document.getElementById('msg') // selecionado a div pelo id='msg'atribuído a ela.
+    a.style.background = 'red' // mudando a cor de fundo da div id='msg'
+    a.innerText = 'Estou Aguardando...' // mudando o texto da div id='msg'
+    var b = window.document.getElementsByName('msg')[0] // Selecioando por nome
+    b.style.background = 'red'
+
+    var c = window.document.querySelector('div#msg') // usando seletor
+    c.style.background = 'orange'
+
+
+
+// OBS: Toda div, é representada por uma # (hashtag ou tralha) e toda classe ou class é representada por um ponto (.)
+
+</script>
+
+
+</body>
+</html>
+
+<!--        >>> ÁRVORE DOM <<<
+            hierariquia do DOM
+Tudo dentro do javaScrip está dentro de um objeto chamado window.
+
+    window
+        location | document | history | e muitos outros...
+
+ * dentro de document há o html
+    document
+        html -> (parent)
+            head | body (objetos ou filhos ->  children)
+
+E ASSIM POR DIANTE...
+-->
+
+<!--    >>> SELECIONANDO ELEMENTOS DA ARVORE DOM <<<
+
+    para selecionar os elementos do DOM, há vários métodos, entre eles:
+
+        por Marca   -> getElementsByTagName() -> seleciona vários objetos.
+        por ID      -> getElementByid()      -> identificar a div por id.
+        por Nome    -> getElementByName()    -> Se tiver propriedade Nome. 
+        Por Classe  -> getElementByClassName() -> Seleção por Classe.
+        por Seletor -> querySelector() e querySelectorAll() -> selecionar por seletor.
+
+
+-->
