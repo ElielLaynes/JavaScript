@@ -17,6 +17,11 @@ section {
     box-shadow: 3px 3px 10px rgb(34, 3, 3);
 
 }
+
+select#flista {
+    width: 150px;
+}
+
 footer {
     color: floralwhite;
     text-align: center;
