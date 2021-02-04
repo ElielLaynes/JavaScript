@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Aula 04</title>
+    <style>
+        body{
+            background-color: rgb(18, 92, 92);
+            color: black; /* Comentário em CSS */
+            font: normal 20px Arial;
+        }
+
+        h1{
+            color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Bem vindo ao mundo do JavaScript :D</p>
+    <p>Tratamento de Dados - ex003</p>
+
+
+    <script>
+        // Convertendo string para NÚMERO
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var soma = n1 + n2
+        window.alert('A soma dos valores é ' + soma)
+    </script>
+
+    <script>
+        // Convertendo Números para STRING
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        // utilizando template string com PlaceHolder
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}` )
+
+    </script>
+</body>
+</html>
+
+<!-- para fazer a conversão de string para números, em JavaScript usa-se:
+
+    Number.parseInt(n) -> para números inteiros
+    Number.parseFloat(n) -> para números com ponto flutuante
+
+-> nas versões mais atuais do JavaScript essa conversão funciona utilizando apenas Number(n) e o próprio JavaScript se encarrega de fazer a conversão. 
+O que não elimina as versões com parse, quando necessário declarar é bom usar o parse.
+
+# Colocando aspenas o parseInt/Float também funciona.
+
+                >>> CONVERSÃO DE NÚMERO PARA STRING <<<
+
+    Para converter números para string pode-se usar os comandos:
+
+        String(n)
+        n.toString()
+    
+    Dessa forma vamos ter a conversão de dados para string.
+-->
+
+<!--
+                >>> FORMATANDO STRINGS <<<
+
+A algumas formas de tratas as string e nas versões atuais do JavaScript tem o template string, que facilita bastante a impressão dos dados.
+
+    Exemplos:
+
+    var s = 'JavaScript'
+    'Eu estou aprendendo s'         // não faz interpolação  -> ou seja, não imprime a variável (s) junto da string.
+    'Eu estou aprendendo' + s      // usa concatenação       -> serve para impressões de dados simples.
+    `Eu estou aprendendo ${s}`    // usa template string     -> Deixa a impressão do dados mais flexível e dinâmica. 
+        obs1: O símbolo ${} é chamodo de PlaceHolder
+        obs2: para usar template string precisa usar CRASE em vez de aspas.
+
+
+            >>> OUTRAS FORMAS DE FORMATAÇÃO DE STRINGS <<<
+
+Há também outras diversas formas de formatar uma string. Exemplos:
+
+    var s = 'JavaScript'
+
+    s.length               // retorna quantos caracteres a string tem.
+    s.toUpperCase()       // colocar todas as letras para 'MAIÚSCULAS'.
+    s.toLowerCase()      // colocar todas as letras para 'minúsculas'.
+
+
+-->
